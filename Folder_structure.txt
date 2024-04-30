@@ -1,0 +1,38 @@
+resume-maker/
+│
+├── backend/
+│   ├── controllers/
+│   │   ├── userController.js     // Handles user-related logic
+│   │   └── resumeController.js   // Handles resume generation logic
+│   ├── models/
+│   │   └── userModel.js          // Defines MongoDB schema for users
+│   ├── routes/
+│   │   ├── userRoutes.js         // Routes for user authentication and management
+│   │   └── resumeRoutes.js       // Routes for resume generation and download
+│   ├── services/
+│   │   └── pdfService.js         // Service for generating PDF resumes
+│   ├── config.js                 // Configuration file (e.g., database URI, JWT secret)
+│   ├── middleware.js             // Middleware for authentication and error handling
+│   ├── server.js                 // Entry point for the Express.js server
+│   └── package.json              // Backend dependencies and scripts
+│
+├── frontend/
+│   ├── public/
+│   │   └── index.html            // Main HTML file
+│   ├── src/
+│   │   ├── components/           // React components
+│   │   │   ├── Auth/             // Authentication-related components
+│   │   │   ├── ResumeForm/       // Form for inputting user data
+│   │   │   ├── ResumePreview/    // Component for displaying generated resumes
+│   │   │   └── DownloadButton/   // Button component for downloading resumes
+│   │   ├── pages/                // React pages (e.g., Home, Dashboard)
+│   │   ├── services/             // Frontend services (e.g., API calls)
+│   │   ├── App.js                // Main component
+│   │   ├── index.js              // Entry point for React application
+│   │   └── ...
+│   ├── package.json              // Frontend dependencies and scripts
+│   └── ...
+│
+├── .gitignore                    // Specifies files/folders to ignore in Git
+├── package.json                  // Workspace-wide dependencies and scripts
+└── README.md                     // Project documentation
